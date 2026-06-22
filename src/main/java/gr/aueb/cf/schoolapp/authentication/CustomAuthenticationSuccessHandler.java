@@ -30,7 +30,7 @@ public class CustomAuthenticationSuccessHandler implements AuthenticationSuccess
             (HttpServletRequest request, HttpServletResponse response, Authentication authentication)
             throws IOException, ServletException {
 
-        log.info("User {} logged in succesfully", authentication.getName());      //username
+        log.info("User {} logged in successfully", authentication.getName());      //username
 
         SavedRequest savedRequest = requestCache.getRequest(request,response);
 
